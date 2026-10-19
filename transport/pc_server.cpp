@@ -2,7 +2,8 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#include <algorithm>
+#include "processor.h"
+
 #include <cstdint>
 #include <iostream>
 #include <string>
@@ -74,48 +75,6 @@ bool receive_message(int socket_fd, std::string& message) {
     }
 
     return true;
-}
-
-std::string lowercase(std::string text) {
-    std::transform(
-        text.begin(),
-        text.end(),
-        text.begin(),
-        [](unsigned char c) {
-            return static_cast<char>(std::tolower(c));
-        }
-    );
-
-    return text;
-}
-
-/*
-    TEMPORARY MOCK PROCESSOR
-
-    This will later be replaced by the Qwen3/Ollama processing layer.
-
-    For now it gives us something predictable to test:
-    if an earlier chunk says "no known allergies"
-    and a later chunk says "allergic to penicillin",
-    the server returns a warning.
-*/
-std::string process_chunk(
-    const std::string& previous_context,
-    const std::string& new_chunk
-) {
-    std::string old_text = lowercase(previous_context);
-    std::string new_text = lowercase(new_chunk);
-
-    if (
-        old_text.find("no known allergies") != std::string::npos &&
-        new_text.find("allergic to penicillin") != std::string::npos
-    ) {
-        return "WARNING: Contradiction detected. Earlier information stated "
-               "no known allergies, but the latest transcript reports a "
-               "penicillin allergy.";
-    }
-
-    return "";
 }
 
 int main() {

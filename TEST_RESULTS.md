@@ -1,1 +1,0 @@
-v1.4.0: 62 mock/protocol/validator tests passed. Screenshot errors tested as HTTP 404 retired-model response and finish_reason=length. No real cloud account, model accuracy, speed, native GUI or Windows runtime validation. See USER_GUIDE.md.

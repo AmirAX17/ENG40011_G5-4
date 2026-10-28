@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/whisper-bench.dir/link.d "CMakeFiles/whisper-bench.dir/bench.cpp.o" -o ../../bin/whisper-bench  -Wl,-rpath,/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/bin: ../../bin/libwhisper.so.1.9.5 ../../bin/libggml.so.0.27.0 ../../bin/libggml-cpu.so.0.27.0 ../../bin/libggml-base.so.0.27.0

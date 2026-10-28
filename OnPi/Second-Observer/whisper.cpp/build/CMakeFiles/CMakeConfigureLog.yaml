@@ -1,0 +1,1475 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.18.50+rpt-rpi-2712 - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58345/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_58345.dir/build.make CMakeFiles/cmTC_58345.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt'
+        Building C object CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_58345.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccqFYHe5.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o /tmp/ccqFYHe5.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_58345
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58345.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58345' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_58345.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC5jc8b.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_58345 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC5jc8b.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_58345 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58345' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_58345.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -o cmTC_58345
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58345/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_58345.dir/build.make CMakeFiles/cmTC_58345.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-Add6Wt']
+        ignore line: [Building C object CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_58345.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccqFYHe5.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o /tmp/ccqFYHe5.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_58345]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58345.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58345' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_58345.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC5jc8b.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_58345 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccC5jc8b.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_58345] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC5jc8b.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_58345 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_58345.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a20a8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a20a8.dir/build.make CMakeFiles/cmTC_a20a8.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa'
+        Building CXX object CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a20a8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccMgfU6y.s
+        GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/14"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/14
+         /usr/include/aarch64-linux-gnu/c++/14
+         /usr/include/c++/14/backward
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMgfU6y.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a20a8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20a8.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a20a8' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a20a8.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBOijXC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a20a8 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBOijXC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a20a8 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a20a8' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a20a8.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a20a8
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/14]
+          add: [/usr/include/aarch64-linux-gnu/c++/14]
+          add: [/usr/include/c++/14/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/14] ==> [/usr/include/aarch64-linux-gnu/c++/14]
+        collapse include dir [/usr/include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/aarch64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a20a8/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a20a8.dir/build.make CMakeFiles/cmTC_a20a8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-C8AOqa']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a20a8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccMgfU6y.s]
+        ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/14"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/14]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/14]
+        ignore line: [ /usr/include/c++/14/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMgfU6y.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a20a8]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20a8.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a20a8' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a20a8.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBOijXC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a20a8 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccBOijXC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a20a8] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBOijXC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_a20a8 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_a20a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:3 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Debian 14.2.0-19) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "ggml/CMakeLists.txt:297 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8f3f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8f3f.dir/build.make CMakeFiles/cmTC_a8f3f.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV'
+        Building C object CMakeFiles/cmTC_a8f3f.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -o CMakeFiles/cmTC_a8f3f.dir/src.c.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV/src.c
+        Linking C executable cmTC_a8f3f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8f3f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a8f3f.dir/src.c.o -o cmTC_a8f3f
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-pRDAaV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d43f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0d43f.dir/build.make CMakeFiles/cmTC_0d43f.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8'
+        Building C object CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o
+        /usr/bin/cc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8/OpenMPTryFlag.c
+        Linking C executable cmTC_0d43f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d43f.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/aarch64-linux-gnu/14/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0d43f' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_0d43f.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cci5EHew.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_0d43f /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0d43f' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_0d43f.'
+        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o -o cmTC_0d43f
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:296 (message)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d43f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_0d43f.dir/build.make CMakeFiles/cmTC_0d43f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8']
+        ignore line: [Building C object CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/cc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-T8jfD8/OpenMPTryFlag.c]
+        ignore line: [Linking C executable cmTC_0d43f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d43f.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/aarch64-linux-gnu/14/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0d43f' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_0d43f.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cci5EHew.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_0d43f /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadend.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cci5EHew.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0d43f] ==> ignore
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [CMakeFiles/cmTC_0d43f.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3e20/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f3e20.dir/build.make CMakeFiles/cmTC_f3e20.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc'
+        Building CXX object CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_f3e20
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e20.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/aarch64-linux-gnu/14/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_f3e20' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_f3e20.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6I7154.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_f3e20 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_f3e20' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_f3e20.'
+        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o -o cmTC_f3e20
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:296 (message)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3e20/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f3e20.dir/build.make CMakeFiles/cmTC_f3e20.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-ayL7dc/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_f3e20]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e20.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/aarch64-linux-gnu/14/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_f3e20' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-pthread' '-dumpdir' 'cmTC_f3e20.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6I7154.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_f3e20 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadbegin.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o /usr/lib/gcc/aarch64-linux-gnu/14/crtoffloadend.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6I7154.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f3e20] ==> ignore
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [CMakeFiles/cmTC_f3e20.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:456 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:596 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_14c81/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_14c81.dir/build.make CMakeFiles/cmTC_14c81.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4'
+        Building C object CMakeFiles/cmTC_14c81.dir/OpenMPCheckVersion.c.o
+        /usr/bin/cc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_14c81.dir/OpenMPCheckVersion.c.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4/OpenMPCheckVersion.c
+        Linking C executable cmTC_14c81
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14c81.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp CMakeFiles/cmTC_14c81.dir/OpenMPCheckVersion.c.o -o cmTC_14c81
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-PChpP4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:456 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindOpenMP.cmake:596 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/CMakeLists.txt:340 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_321a1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_321a1.dir/build.make CMakeFiles/cmTC_321a1.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E'
+        Building CXX object CMakeFiles/cmTC_321a1.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_321a1.dir/OpenMPCheckVersion.cpp.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_321a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_321a1.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_321a1.dir/OpenMPCheckVersion.cpp.o -o cmTC_321a1
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-sYPU4E'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:121 (check_cxx_compiler_flag)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55c8a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55c8a.dir/build.make CMakeFiles/cmTC_55c8a.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t'
+        Building CXX object CMakeFiles/cmTC_55c8a.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -std=gnu++17   -mfp16-format=ieee -o CMakeFiles/cmTC_55c8a.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t/src.cxx
+        c++: error: unrecognized command-line option '-mfp16-format=ieee'
+        gmake[1]: *** [CMakeFiles/cmTC_55c8a.dir/build.make:81: CMakeFiles/cmTC_55c8a.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-2gxG3t'
+        gmake: *** [Makefile:134: cmTC_55c8a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:173 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:200 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_dotprod"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_dotprod_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_855d9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_855d9.dir/build.make CMakeFiles/cmTC_855d9.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw'
+        Building CXX object CMakeFiles/cmTC_855d9.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_dotprod  -mcpu=cortex-a76+crc+crypto+dotprod -std=gnu++17 -o CMakeFiles/cmTC_855d9.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw/src.cxx
+        Linking CXX executable cmTC_855d9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_855d9.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+dotprod CMakeFiles/cmTC_855d9.dir/src.cxx.o -o cmTC_855d9
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-RgjDHw'
+        
+      exitCode: 0
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_dotprod_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:173 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:201 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_i8mm"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_i8mm_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83e01/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_83e01.dir/build.make CMakeFiles/cmTC_83e01.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs'
+        Building CXX object CMakeFiles/cmTC_83e01.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_i8mm  -mcpu=cortex-a76+crc+crypto+i8mm -std=gnu++17 -o CMakeFiles/cmTC_83e01.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs/src.cxx
+        Linking CXX executable cmTC_83e01
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83e01.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+i8mm CMakeFiles/cmTC_83e01.dir/src.cxx.o -o cmTC_83e01
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-6NYwGs'
+        
+      exitCode: 0
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_i8mm_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+        Illegal instruction
+      exitCode: "FAILED_TO_RUN"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:182 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:201 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_noi8mm"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_noi8mm"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d57c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d57c9.dir/build.make CMakeFiles/cmTC_d57c9.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq'
+        Building CXX object CMakeFiles/cmTC_d57c9.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_noi8mm  -mcpu=cortex-a76+crc+crypto+noi8mm -std=gnu++17 -o CMakeFiles/cmTC_d57c9.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq/src.cxx
+        Linking CXX executable cmTC_d57c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d57c9.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+noi8mm CMakeFiles/cmTC_d57c9.dir/src.cxx.o -o cmTC_d57c9
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-iSPwWq'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:173 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:202 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_sve"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_sve_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_daa47/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_daa47.dir/build.make CMakeFiles/cmTC_daa47.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj'
+        Building CXX object CMakeFiles/cmTC_daa47.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sve  -mcpu=cortex-a76+crc+crypto+sve -std=gnu++17 -o CMakeFiles/cmTC_daa47.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj/src.cxx
+        Linking CXX executable cmTC_daa47
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daa47.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+sve CMakeFiles/cmTC_daa47.dir/src.cxx.o -o cmTC_daa47
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-695mFj'
+        
+      exitCode: 0
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_sve_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+        Illegal instruction
+      exitCode: "FAILED_TO_RUN"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:182 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:202 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_nosve"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_nosve"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7d03/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7d03.dir/build.make CMakeFiles/cmTC_b7d03.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0'
+        Building CXX object CMakeFiles/cmTC_b7d03.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_nosve  -mcpu=cortex-a76+crc+crypto+nosve -std=gnu++17 -o CMakeFiles/cmTC_b7d03.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0/src.cxx
+        Linking CXX executable cmTC_b7d03
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d03.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+nosve CMakeFiles/cmTC_b7d03.dir/src.cxx.o -o cmTC_b7d03
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-h0mTu0'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:173 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:204 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_sme"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_sme_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d6c7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1d6c7.dir/build.make CMakeFiles/cmTC_1d6c7.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU'
+        Building CXX object CMakeFiles/cmTC_1d6c7.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sme  -mcpu=cortex-a76+crc+crypto+sme -std=gnu++17 -o CMakeFiles/cmTC_1d6c7.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU/src.cxx
+        Linking CXX executable cmTC_1d6c7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d6c7.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+sme CMakeFiles/cmTC_1d6c7.dir/src.cxx.o -o cmTC_1d6c7
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-p6h1YU'
+        
+      exitCode: 0
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_sme_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+        Illegal instruction
+      exitCode: "FAILED_TO_RUN"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:182 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:204 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_nosme"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_nosme"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7eb5c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7eb5c.dir/build.make CMakeFiles/cmTC_7eb5c.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871'
+        Building CXX object CMakeFiles/cmTC_7eb5c.dir/src.cxx.o
+        /usr/bin/c++ -DGGML_MACHINE_SUPPORTS_nosme  -mcpu=cortex-a76+crc+crypto+nosme -std=gnu++17 -o CMakeFiles/cmTC_7eb5c.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871/src.cxx
+        Linking CXX executable cmTC_7eb5c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7eb5c.dir/link.txt --verbose=1
+        /usr/bin/c++  -mcpu=cortex-a76+crc+crypto+nosme CMakeFiles/cmTC_7eb5c.dir/src.cxx.o -o cmTC_7eb5c
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-WVi871'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_DOTPROD"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_DOTPROD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_66d3d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_66d3d.dir/build.make CMakeFiles/cmTC_66d3d.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P'
+        Building CXX object CMakeFiles/cmTC_66d3d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_DOTPROD  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_66d3d.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P/src.cxx
+        Linking CXX executable cmTC_66d3d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66d3d.dir/link.txt --verbose=1
+        /usr/bin/c++  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme CMakeFiles/cmTC_66d3d.dir/src.cxx.o -o cmTC_66d3d
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-gUh87P'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_SVE"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_SVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c4be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c4be.dir/build.make CMakeFiles/cmTC_4c4be.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je'
+        Building CXX object CMakeFiles/cmTC_4c4be.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_SVE  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_4c4be.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je/src.cxx
+        /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je/src.cxx:3:24: error: #error "Feature SVE is not defined"
+            3 |                     #  error "Feature SVE is not defined"
+              |                        ^~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_4c4be.dir/build.make:81: CMakeFiles/cmTC_4c4be.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-As34je'
+        gmake: *** [Makefile:134: cmTC_4c4be/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_MATMUL_INT8"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_MATMUL_INT8"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce499/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce499.dir/build.make CMakeFiles/cmTC_ce499.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa'
+        Building CXX object CMakeFiles/cmTC_ce499.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_MATMUL_INT8  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_ce499.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa/src.cxx
+        /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa/src.cxx:3:24: error: #error "Feature MATMUL_INT8 is not defined"
+            3 |                     #  error "Feature MATMUL_INT8 is not defined"
+              |                        ^~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_ce499.dir/build.make:81: CMakeFiles/cmTC_ce499.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3Flsfa'
+        gmake: *** [Makefile:134: cmTC_ce499/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_FMA"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_FMA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d518a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d518a.dir/build.make CMakeFiles/cmTC_d518a.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2'
+        Building CXX object CMakeFiles/cmTC_d518a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_FMA  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_d518a.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2/src.cxx
+        Linking CXX executable cmTC_d518a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d518a.dir/link.txt --verbose=1
+        /usr/bin/c++  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme CMakeFiles/cmTC_d518a.dir/src.cxx.o -o cmTC_d518a
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-z8cqi2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_FP16_VECTOR_ARITHMETIC"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_FP16_VECTOR_ARITHMETIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d22a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5d22a.dir/build.make CMakeFiles/cmTC_5d22a.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU'
+        Building CXX object CMakeFiles/cmTC_5d22a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_FP16_VECTOR_ARITHMETIC  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_5d22a.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU/src.cxx
+        Linking CXX executable cmTC_5d22a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d22a.dir/link.txt --verbose=1
+        /usr/bin/c++  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme CMakeFiles/cmTC_5d22a.dir/src.cxx.o -o cmTC_5d22a
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xeAHfU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:269 (check_cxx_source_compiles)"
+      - "ggml/src/CMakeLists.txt:596 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAVE_SME"
+    directories:
+      source: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN"
+      binary: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/cmake/;/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/ggml/cmake/"
+    buildResult:
+      variable: "HAVE_SME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cb3ea/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cb3ea.dir/build.make CMakeFiles/cmTC_cb3ea.dir/build
+        gmake[1]: Entering directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN'
+        Building CXX object CMakeFiles/cmTC_cb3ea.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_SME  -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve+nosme -std=gnu++17 -o CMakeFiles/cmTC_cb3ea.dir/src.cxx.o -c /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN/src.cxx
+        /home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN/src.cxx:3:24: error: #error "Feature SME is not defined"
+            3 |                     #  error "Feature SME is not defined"
+              |                        ^~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_cb3ea.dir/build.make:81: CMakeFiles/cmTC_cb3ea.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/secondobserver/Desktop/ENG40011_G5-4-Second-Observer/whisper.cpp/build/CMakeFiles/CMakeScratch/TryCompile-1WUAXN'
+        gmake: *** [Makefile:134: cmTC_cb3ea/fast] Error 2
+        
+      exitCode: 2
+...
